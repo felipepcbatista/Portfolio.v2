@@ -1,0 +1,109 @@
+.hero {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #1e2a38;
+    padding: 50px 0;
+    text-align: left;
+    margin: 0 auto;
+}
+
+.hero .container {
+    width: 100%;
+    max-width: 1400px;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+
+.hero .row {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.hero .col-md-6 {
+    text-align: left;
+}
+
+.hero img {
+    border-radius: 50%;
+    max-height: 350px;
+    box-shadow: 0 0 10px #3bb1ff49;
+}
+
+.hero h1{
+    color: aliceblue;
+}
+
+.hero h2{
+    color: #1e80ff;
+}
+
+.hero p{
+    color: white;
+}
+
+.hero .d-flex {
+    display: flex;
+    gap: 14px;
+    margin: 20px 0;
+    list-style: none;
+}
+
+.hero .hero-links ul li {
+    display: inline-block;
+}
+
+.hero .d-flex .btn-primary{
+    background-color: #1eb8ff;
+    border-radius: 3rem;
+    padding: 0.5rem 1rem;
+    box-shadow: 0 0 5px rgba(53, 141, 255, 0.884)
+}
+
+.hero .d-flex .btn-outline-primary{
+    color: #1eb8ff;
+    border-radius: 3rem;
+    padding: 0.5rem 1rem;
+    box-shadow: 0 0 8px #358dff79;
+}
+
+.hero .d-flex .btn-primary:hover{
+    transform: scale(1.03);
+}
+
+.hero .d-flex .btn-outline-primary:hover{
+    transform: scale(1.03);
+    color: white;
+    background-color: #1eb8ff;
+}
+
+.btn-primary i{
+    font-size: 10px;
+}
+
+.hero-links ul {
+    display: flex;
+    gap: 1.5rem;
+    padding-left: 0;
+    list-style-type: none;
+}
+
+.hero-links ul li a{
+    color: aliceblue;
+}
+
+.hero-links ul li i {
+    color: white;
+    font-size: 1.5rem;
+    background-color: #293b50;
+    padding: 0.5rem;
+    border-radius: 50%;
+}
+
+.hero-links ul li i:hover{
+    background-color: #1e80ff;
+    box-shadow: 0 0 5px #358dfffa;
+}
