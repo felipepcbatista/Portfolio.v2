@@ -35,7 +35,7 @@ document.addEventListener('DOMContentLoaded', function () {
     const mensagem = document.getElementById("mensagem").value;
 
     try {
-      const res = await fetch("/send-email", {
+      const res = await fetch("https://portfolio-v2-dioj.onrender.com/send-email", {
         method: "POST",
         headers: { "Content-Type": "application/json" },
         body: JSON.stringify({ nome, email, mensagem })
