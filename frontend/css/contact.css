@@ -1,0 +1,139 @@
+.contact-section {
+    background-color: #1e2a38;
+    padding: 4rem 0;
+    color: white;
+}
+
+.social-links {
+    display: flex;
+    justify-content: center;
+    gap: 1.5rem;
+    margin: 1rem 0 2rem 0;
+}
+
+.social-icon {
+    color: white;
+    background-color: #293b50;
+    width: 45px;
+    height: 45px;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 1.2rem;
+    transition: all 0.3s;
+}
+
+.social-icon:hover {
+    background-color: #1e80ff;
+    transform: translateY(-3px);
+    text-decoration: none;
+    color: white;
+    box-shadow: 0 0 10px #358cff;
+}
+
+/* Formulário */
+.contact-form {
+    background: #0f1f31;
+    padding: 2rem;
+    border-radius: 10px;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+}
+
+.form-group {
+    position: relative;
+    margin-bottom: 1.5rem;
+}
+
+.form-group input,
+.form-group textarea {
+    width: 100%;
+    padding: 1rem;
+    background: transparent;
+    border: 1px solid #293b50;
+    border-radius: 5px;
+    color: white;
+    font-family: 'Poppins', sans-serif;
+}
+
+.form-group textarea {
+    resize: vertical;
+    min-height: 120px;
+}
+
+.form-group label {
+    position: absolute;
+    top: 1rem;
+    left: 1rem;
+    color: #7cafe2;
+    transition: all 0.3s;
+    pointer-events: none;
+    background: #0f1f31;
+    padding: 0 0.5rem;
+}
+
+.form-group input:focus + label,
+.form-group textarea:focus + label,
+.form-group input:not(:placeholder-shown) + label,
+.form-group textarea:not(:placeholder-shown) + label {
+    top: -0.6rem;
+    font-size: 0.8rem;
+    color: #1eb8ff;
+}
+
+.submit-btn {
+    background-color: #1e80ff;
+    color: white;
+    border: none;
+    padding: 0.8rem 2rem;
+    border-radius: 5px;
+    font-family: 'Poppins', sans-serif;
+    font-weight: 500;
+    cursor: pointer;
+    transition: all 0.3s;
+    width: 100%;
+    box-shadow: 0 0 10px #358dff69;
+}
+
+.submit-btn:hover {
+    background-color: #1eb8ff;
+    transform: translateY(-2px);
+}
+
+.form-success {
+  background-color: #0f1f31;
+  padding: 2rem;
+  border-radius: 10px;
+  text-align: center;
+  color: white;
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.3);
+  animation: fadeIn 0.4s ease;
+}
+
+.form-success i {
+  font-size: 3rem;
+  color: #1eb8ff;
+  margin-bottom: 1rem;
+}
+
+.form-success h3 {
+  font-size: 1.8rem;
+  margin-bottom: 0.5rem;
+  color: white;
+}
+
+.form-success p {
+  color: #ccc;
+  font-size: 1rem;
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
