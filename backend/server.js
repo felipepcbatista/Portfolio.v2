@@ -50,7 +50,7 @@ app.post('/send-email', async (req, res) => {
 });
 
 // Todas as rotas que não forem API vão redirecionar pro frontend
-app.get('*', (req, res) => {
+app.get('/*', (req, res) => {
   res.sendFile(path.join(__dirname, '../frontend/index.html'));
 });
 
